@@ -1,13 +1,6 @@
-NAME:CHANDRU.P
-
-
-
-REG NO:212223110007
-
-
-
-
 # Metadata-Extraction-using-ExifTool-log2timeline-and-Hidden-Data-Search-using-Steganography-Tools
+## NAME: SANTHOSH S
+## REG.NO: 212224100052
 ## AIM:
 To extract metadata, perform timeline analysis, and search for hidden data using forensic tools like ExifTool, log2timeline, and steganography detection tools.
 
@@ -33,39 +26,40 @@ Metadata and Timeline Forensics, Steganography Analysis Steps
  ```
 - **Extract metadata from a file:**
 ```bash
-  exiftool image path
-  exiftool png.jpeg
+  exiftool /<image path>/image1.jpeg
 ```
 - **Embed data**
   ```
-  steghide embed -cf (image path) -ef (text file path)
-  steghide embed -cf /home/asinvardhini/Downloads/png.jpeg -ef /home/asinvardhini/Downloads/hidden.txt
+  steghide embed -cf /<image path>/image.jpeg -ef /<text file path>/hidden.txt
   ```
 - **Extract hidden data:**
   ```
-  steghide extract -sf (imamge path)
-  steghide extract -sf png.jpeg
+  steghide extract -sf /<image path>/image1.jpeg
   ```
 - **Using binwalk – for file analysis**  
   ```bash
-   binwalk png.jpeg
+   binwalk /<image path>/image1.jpeg
   ```
   
 ## OUTPUT:
 
 ### Extraction of Metadata using exiftool
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/e1e28e0a-e575-4021-b467-c6adb90c195e"/>
+<img width="647" height="457" alt="1" src="https://github.com/user-attachments/assets/129ee2bd-9e5e-48f9-8e26-327f3bac9029" />
+
 
 
 ### Data Embedding in Image
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/3d1c5e74-ee2a-4c71-b340-584cdb3a777e"/>
+<img width="641" height="148" alt="2" src="https://github.com/user-attachments/assets/246190fa-9c40-4759-a04c-1dbf0b97e08b" />
+
 
 
 ### Extraction of hidden data
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/2aa71bb6-a239-435c-af34-5ad217673f1e"/>
+<img width="624" height="91" alt="3" src="https://github.com/user-attachments/assets/e9ab1935-291d-447e-9df8-fc1f66f15305" />
+
 
 ### Using binwalk – for file analysis
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/eb0c5c2b-7aa6-4b0f-8e7d-9cd7bc01b52c"/>
+<img width="627" height="146" alt="4" src="https://github.com/user-attachments/assets/dc1c0c1a-cf12-4638-94f3-11e3b300a799" />
+
 
 
 ## RESULT:
